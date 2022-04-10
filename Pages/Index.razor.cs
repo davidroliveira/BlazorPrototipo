@@ -1,5 +1,4 @@
-﻿using BlazorApp.Server.Model;
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
 
 namespace BlazorApp.Wasm.Pages;
 
@@ -13,6 +12,4 @@ public partial class Index
     {
         myFirstComponent.ShowMessage("The message has changed");
     }
-    
-    private Person person = new Person() { Id = Guid.NewGuid(), Name = "Elon Musk" };
 }

@@ -1,6 +1,6 @@
 ﻿namespace BlazorApp.Server.Model
 {
-    public class Person
+    public class PersonModel
     {
         public Guid Id { get; set; }
         public string Name { get; set; }

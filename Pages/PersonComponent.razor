@@ -1,0 +1,9 @@
+﻿@page "/person"
+
+<PageTitle>Person</PageTitle>
+
+<br/>
+<br/>
+<h1>@personModel.Name</h1>
+<b>On Change</b><input type="text" @bind="personModel.Name"/>
+<b>On Input</b><input type="text" @bind-value="personModel.Name" @bind-value:event="oninput"/>
