@@ -1,3 +1,15 @@
-﻿namespace BlazorApp.Wasm.Pages;
+﻿using Microsoft.AspNetCore.Components;
 
-public partial class Index { }
+namespace BlazorApp.Wasm.Pages;
+
+public partial class Index
+{
+    private MyFirstComponent myFirstComponent;
+
+    [Parameter]
+    public string Value { get; set; }
+    private void SetCustomMessageClick()
+    {
+        myFirstComponent.ShowMessage("The message has changed");
+    }
+}

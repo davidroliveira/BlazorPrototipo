@@ -59,6 +59,10 @@ a, .btn-link {
     color: white;
 }
 
-    .blazor-error-boundary::after {
-        content: "An error has occurred."
-    }
+.blazor-error-boundary::after {
+    content: "An error has occurred."
+}
+
+.custom-logo { max-width: 60px; height: auto;}
+
+.custom-input{background-color: lightgreen}

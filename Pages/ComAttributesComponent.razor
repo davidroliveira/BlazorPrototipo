@@ -1,0 +1,22 @@
+﻿@page "/Attributes"
+<h3>ComAttributesComponent</h3>
+
+@*Esquema com Dictionary*@
+<input type="text" @attributes="DefaultAttributes" />
+<br />
+<input type="text" @attributes="DefaultAttributes" />
+<br />
+<input type="text" @attributes="DefaultAttributes" />
+<br />
+<input type="text" @attributes="DefaultAttributes" />
+<br />
+
+@*Esquema com propriedades*@
+Without attributes directives
+<br />
+<input type="text"
+       maxlength="@Maxlength"
+       placeholder="@Placeholder"
+       required="@Required"
+       size="@Size"
+       class="@Class" />

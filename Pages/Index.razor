@@ -1,9 +1,14 @@
 ﻿@page "/"
+@page "/Index"
+@page "/Index/{value}"
+<img src="/images/logo-blazor.png" class="custom-logo" />
+<br />
+<MyFirstComponent @ref="myFirstComponent" Title="My First Component - Child Component"></MyFirstComponent>
 
-<PageTitle>Index</PageTitle>
-
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
+@if (Value != null)
+{
+    <br/>
+    <p><b>Value: </b>@Value</p>
+}
+<br/>
+<button @onclick="SetCustomMessageClick">Set Custom Message</button>
