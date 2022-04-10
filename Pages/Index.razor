@@ -4,7 +4,6 @@
 <img src="/images/logo-blazor.png" class="custom-logo" />
 <br />
 <MyFirstComponent @ref="myFirstComponent" Title="My First Component - Child Component"></MyFirstComponent>
-
 @if (Value != null)
 {
     <br/>
@@ -12,3 +11,8 @@
 }
 <br/>
 <button @onclick="SetCustomMessageClick">Set Custom Message</button>
+<br/>
+<br/>
+<h1>@person.Name</h1>
+<b>On Change</b><input type="text" @bind="person.Name"/>
+<b>On Input</b><input type="text" @bind-value="person.Name" @bind-value:event="oninput"/>
